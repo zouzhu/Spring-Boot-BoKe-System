@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zouzhu</groupId>
-    <artifactId>user-boke-data-model</artifactId>
+    <artifactId>download-user-boke-data-model</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-boke-data-model</name>
+    <name>download-user-boke-data-model</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
