@@ -1,0 +1,27 @@
+
+
+# 配置 tomcat server 端口 8080
+server:
+  port: 8080
+
+
+
+
+
+
+spring:
+
+
+  # 配置 Spring Boot 应用名称
+  application:
+    name: user-view-display-data-model
+
+
+  # Redis 地址配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: "12345"
+    database: 0
+
+

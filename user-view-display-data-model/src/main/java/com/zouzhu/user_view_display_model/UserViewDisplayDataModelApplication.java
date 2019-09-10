@@ -3,9 +3,11 @@ package com.zouzhu.user_view_display_model;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-public class UserViewDisplayDataModel {
+@ServletComponentScan
+public class UserViewDisplayDataModelApplication {
 
     /**
      *       描述 : 对于用户的请求做出分析, 向其他的服务提供者模块发起请求, 并将得到的数据展示给用户
@@ -16,6 +18,6 @@ public class UserViewDisplayDataModel {
      * **/
 
     public static void main(String[] args){
-        SpringApplication.run(UserViewDisplayDataModel.class, args);
+        SpringApplication.run(UserViewDisplayDataModelApplication.class, args);
     }
 }
