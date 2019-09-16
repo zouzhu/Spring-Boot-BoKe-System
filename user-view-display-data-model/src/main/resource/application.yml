@@ -25,3 +25,16 @@ spring:
     database: 0
 
 
+  # thymeleaf 模板框架
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    servlet:
+      content-type: text/html
+    encoding: UTF-8
+
+
+  # 本地资源配置
+  resources:
+    static-locations: classpath:/static/css/, classpath:/static/script, calsspath:/static/images/
+

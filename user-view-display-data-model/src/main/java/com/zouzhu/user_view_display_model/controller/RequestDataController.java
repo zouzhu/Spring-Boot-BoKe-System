@@ -3,6 +3,9 @@ package com.zouzhu.user_view_display_model.controller;
 
 import com.zouzhu.user_view_display_model.povo.MessagePovo;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class RequestDataController {
@@ -27,7 +30,11 @@ public class RequestDataController {
     }
 
 
-
+    @RequestMapping(method = RequestMethod.GET, value = {"/test"})
+    @ResponseBody
+    public String webTest(){
+        return "测试成功 !";
+    }
 
 
 
