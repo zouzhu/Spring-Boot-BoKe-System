@@ -2,10 +2,16 @@ package com.zouzhu.user_view_display_model.controller;
 
 
 import com.zouzhu.user_view_display_model.povo.MessagePovo;
+import com.zouzhu.user_view_display_model.povo.TextClassPojo;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 @Controller
 public class RequestDataController {
@@ -17,7 +23,9 @@ public class RequestDataController {
      *        time : 2019/9/10  15.05
      * **/
 
-    public MessagePovo getMessagePovo(){
+    @ResponseBody
+    @GetMapping("/user-view/oneRequestDataDownload")
+    public MessagePovo oneRequestDataDownload(){
         /**
          *
          *    描述 : MesssagePovo 是整个消息体, 包括状态, 时间, 博客内容消息体, 在首页加载的时候显示近 10 天发布的博客内容
@@ -26,7 +34,11 @@ public class RequestDataController {
          *
          *    time : 2019/9/10   15:11
          * */
-        return null;
+        MessagePovo messagePovo = new MessagePovo();
+        messagePovo.setCode(200);
+        messagePovo.setMsg("请求成功 !");
+        messagePovo.setData(null);
+        return messagePovo;
     }
 
 
